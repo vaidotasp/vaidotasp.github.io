@@ -487,7 +487,8 @@ p {
   justify-content: center;
 
   /*  Fancy Transition of "border"  */
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: var(--wrap-back);
+  color: var(--wrap-letter);
 }
 
 .contact-content {
@@ -514,9 +515,6 @@ p {
 }
 
 .contact-icons > a path {
-  fill: #000000;
+  fill: var(--wrap-letter);
 }
 /* Contact-END */
-.svg-icon {
-  fill: #ff0000;
-}
