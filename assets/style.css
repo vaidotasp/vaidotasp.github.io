@@ -48,7 +48,7 @@ p {
   display: inline-block;
 }
 
-.wrapper:before {
+/* .wrapper:before {
   content: '';
   position: absolute;
   left: 0;
@@ -60,17 +60,23 @@ p {
   background-image: url(./images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* filter: contrast(80%); */
-  /* background: var(--base); */
+} */
+
+html {
+  background: url(./images/background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* This controls the shade of the background image */
 
 .wrapper {
-  position: fixed;
-  left: 0;
+  /* position: fixed; */
+  /* left: 0;
   right: 0;
-  z-index: 0;
+  z-index: 0; */
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
@@ -156,6 +162,12 @@ p {
   padding: 3px;
   color: white;
   background: black;
+}
+
+@media (any-pointer: coarse) {
+  .name-vp {
+    margin: 0 auto;
+  }
 }
 
 .name-full {
@@ -352,7 +364,7 @@ p {
 
 /* ABOUT-BEGIN */
 
-.wrapper-about:before {
+/* .wrapper-about:before {
   content: '';
   position: absolute;
   left: 0;
@@ -364,17 +376,12 @@ p {
   background-image: url(./images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  /* background-color: var(--base); */
-  /* background-image: url(https://cdn.glitch.com/41de5b24-2ced-491b-afc5-3ed9b4265134%2F2018-03-13_10-01-24.png?1520949859471);
-  background-size: cover;
-  background-repeat: no-repeat; */
-  /* filter: contrast(50%); */
-}
+} */
 
 /* This controls the shade of the background image */
 
 .wrapper-about {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   z-index: 0;
