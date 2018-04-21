@@ -522,7 +522,7 @@ html {
   align-items: center;
   justify-content: center;
   /*  Fancy Transition of "border"  */
-  background-color: var(--wrap-back);
+  /* background-color: var(--wrap-back); */
 }
 
 @media (any-pointer: coarse) {
